@@ -1,0 +1,46 @@
+*{
+margin:0;
+padding:0;	
+	}
+body{
+	background:#333;
+	width:960px;
+	margin:0 auto;
+	font-size:12px;
+	}
+#header{
+	width:960px;
+	height:140px;
+	background:#000 no-repeat 0px 20px;
+}
+#form0{
+	width:960px;
+	height:140px;
+}
+#form0 table{
+	margin:10px auto;
+	width:60%;
+	}
+#form0 table td{
+	padding-top:10px;
+	font-size:18px;
+	font-color:#fff;
+	}
+#form0 table td input.text{
+     border:#0000ff solid medium;
+     outline:#000 dashed thick;
+     background:#fff;
+	}
+#form0 table td input.submit{
+    width:60px;
+	height:40px;
+	margin-right:40px;
+	}
+#face dl{
+	padding_left:5px;
+	float:left;	
+}			
+#face dl dd img{
+	width:150px;
+	height:150px;
+	}				

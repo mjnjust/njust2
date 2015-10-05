@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="style/basic.css">
+<script>
+function mymessage()
+{
+alert("这段消息由 onload 事件触发");
+}
+</script>
+</head>
+
+<body onload="mymessage()">
+
+
+<div id="header">
+</div>
+
+
+<div id="form0">
+<form name="form1"  method="post" action="###">
+<table align="center">
+<tr>
+<td>用户名:</td>
+<td><input type="text" name="bookname" class="text"></td>
+</tr>
+<tr></tr><tr>
+<td>密码:</td>
+<td><input type="password" name="password1" class="text"></td><td>
+</tr>
+<tr></tr><tr>
+<td>重复密码:</td>
+<td><input type="password" name="password2" class="text"></td>
+</tr>
+<tr></tr><tr>
+<td>性别:</td>
+<td><input type="radio" name="sex" checked="checked" value="男">男<input type="radio" name="sex" value="女">女</td>
+</tr><tr></tr><tr>
+<td>头像:<input type="hidden" name="face" id="face" value="images/0000.jpg"></td>
+<td><a href="###" onclick="javascript:window.open('face.html','face','width=350,height=400,scrollbars=1')"><img src="images/0000.jpg" id="faceimg" class="face"/></a></td>
+</tr>
+<tr></tr><tr></tr>
+<tr>
+<td align="center" colspan="2">
+<input name="submit" type="submit" value="注册"class="submit">
+</td>
+</form>
+</div>
+</body>
+</html>
