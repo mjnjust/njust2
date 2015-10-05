@@ -1,7 +1,8 @@
 package com.njust.mj.Bean;
 
 public class User {
-
+	
+	
 	private int id;
 	private String userId = null ;
 	private String sex = null ;
