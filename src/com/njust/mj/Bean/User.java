@@ -1,5 +1,5 @@
 package com.njust.mj.Bean;
-//äº§å“ç”¨æˆ·ç±»
+//²úÆ·µÄÓÃ»§Àà
 public class User {
 	
 	
