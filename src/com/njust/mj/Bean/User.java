@@ -1,5 +1,5 @@
 package com.njust.mj.Bean;
-
+//产品用户类
 public class User {
 	
 	
