@@ -36,7 +36,7 @@ import com.njust.mj.Service.HibernateUtil;
 public class Test {
 	@org.junit.Test
 	public void testTransData() {
-		String ida = "clientaÃ«¿¡" ;
+		String ida = "clientaæ¯›ä¿Š" ;
 		byte[] x = ida.getBytes();
 		byte[] data = new byte[x.length+2];
 		int index = 0;

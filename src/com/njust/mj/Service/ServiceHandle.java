@@ -9,7 +9,7 @@ public class ServiceHandle {
 	public static void transString(TransData transData) {
 		 int index = ServiceMain.id2index.get(transData.getdesId());
 		 /*
-		  * Êý¾Ý³Ö¾Ã»¯Âß¼­
+		  * ä¼ æ–‡å­—
 		  */
 		 System.out.println("index:"+index);
 		 transData.setdesId(null);
@@ -19,7 +19,7 @@ public class ServiceHandle {
 	public static void transFile(TransData transData) {
 		int index = ServiceMain.id2index.get(transData.getdesId());
 		/*
-		 * Êý¾Ý³Ö¾Ã»¯Âß¼­
+		 * ä¼ æ–‡ä»¶
 		 */
 		System.out.println("do transFile");
 		 byte[] data = "transFile".getBytes();
@@ -29,7 +29,7 @@ public class ServiceHandle {
 	public static void transImage(TransData transData) {
 		int index = ServiceMain.id2index.get(transData.getdesId());
 		/*
-		 * Êý¾Ý³Ö¾Ã»¯Âß¼­
+		 * ä¼ å›¾ç‰‡
 		 */
 		System.out.println("do transImage");
 		 byte[] data = "transImage".getBytes();

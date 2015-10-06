@@ -9,35 +9,33 @@ public class DispatchThread extends Thread{
 	}
 	@Override
 	public void run() {
-		System.out.println("·şÎñÆ÷ÏûÏ¢·¢ËÍ´¦ÀíÏß³ÌÆô¶¯");
 		while(true){
 			int a = ServiceMain.getTransDatalength();
 			if(a>0){
 				TransData transData = ServiceMain.getTransData();
-				System.out.println("´¦Àíµ±Ç°×îÔçÊÕµ½µÄÏûÏ¢£¡");
 				/*
-				 * ĞÅÏ¢½ÓÊÕ·½²»ÔÚÏßÂß¼­
+				 * å¯¹æ–¹ä¸å†çº¿é€»è¾‘
 				 */
 				if(ServiceMain.id2index.get(transData.getdesId())==null){
-					System.out.println("¶Ô·½²»ÔÚÏß");
+					System.out.println("å¯¹æ–¹ä¸åœ¨çº¿");
 				}
 				/*
-				*ĞÅÏ¢½ÓÊÕ·½ÔÚÏßÂß¼­
+				*å¯¹æ–¹åœ¨çº¿é€»è¾‘
 				*/
 				else {
 					System.out.println("DispatchThread:"+transData.getSrcId()+"|"+transData.getdesId());
 					switch (transData.getType()) {
-					case 0://´«ËÍÎÄ×ÖĞÅÏ¢
+					case 0://æ–‡å­—
 						ServiceHandle.transString(transData);
 						break;
-					case 1://´«ËÍÎÄ¼ş
+					case 1://å‘é€æ–‡ä»¶
 						ServiceHandle.transFile(transData);
 						break;
-					case 2://´«ËÍÍ¼Æ¬
+					case 2://å‘é€å›¾ç‰‡
 						ServiceHandle.transImage(transData);
 						break;
 					default:
-						System.out.println("¶Ô·½ÔÚÏß£¬Êı¾İ´«ËÍÖĞ£¡");
+						System.out.println("end");
 						break;
 					}
 				}

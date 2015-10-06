@@ -48,14 +48,14 @@ public class ClientThread extends Thread{
 				TransData transData = new TransData(string.getBytes(),0);
 				if(transData.getType() == 3){
 					/*
-					 * µÇÂ½Âß¼­
+					 * ç™»å½•é€»è¾‘
 					 */
 					myId = transData.getSrcId();
 					ServiceMain.id2index.put(myId, index);
 					System.out.println(myId + ":login");
 				}else if (transData.getType() == 4) {
 					/*
-					 * µÇ³öÂß¼­
+					 * ç™»å‡ºé€»è¾‘
 					 */
 					System.out.println(myId + ":logout");
 					try {
@@ -70,16 +70,15 @@ public class ClientThread extends Thread{
 					
 				}else {
 					/*
-					 * ÆäÓàµÄ½»¸øÆäËûÏß³Ì´¦Àí
+					 * å°†ä¿¡æ¯æ”¾åˆ°é˜Ÿåˆ—ä¸­
 					 */
 					transData.setSrcId(myId);
 					System.out.println("ClientThread:"+transData.getSrcId()+"|"+transData.getdesId());
 					ServiceMain.transDatas.add(transData);
-					System.out.println("ÆäÓàµÄ½»¸øÆäËûÏß³Ì´¦Àí"+ServiceMain.transDatas.size());
+					System.out.println("ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì´ï¿½ï¿½ï¿½"+ServiceMain.transDatas.size());
 				}
 			}
 		}catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
